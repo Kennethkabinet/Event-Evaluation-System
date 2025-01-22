@@ -1,0 +1,238 @@
+body {
+    background-image: url('Images/backgroundcover.jpg') !important;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-div  {
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed; 
+}
+
+
+thead th {
+    text-align: left;
+    background-color: #f5f7fc;
+    color: #333;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+
+table thead {
+    display: table-header-group; 
+}
+
+tbody {
+    margin-top: 15px; 
+    display: table-row-group;
+}
+
+
+.table-spacing-row {
+    height: 15px;
+    background-color: transparent; 
+}
+
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+.notification-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; 
+    transition: background-color 0.2s ease-in-out;
+}
+
+.notification-row:hover {
+    background-color: #e6e9f7;
+}
+
+
+.notification-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.notification-left p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.notification-left img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.notification-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.notification-right p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.date-and-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+button.mark-as-viewed {
+    background-color: var(--red-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.mark-as-viewed:hover {
+    background-color: #0056b3;
+}
+
+
+
+.notification-table {
+    margin: 30px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #000;
+}
+
+
+.delete-all-unread {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-all-unread:hover {
+    background-color: #444;
+}
+.delete-all-viewed {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-all-viewed:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .notification-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .notification-right {
+        align-items: flex-start;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .no-notifications {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body #navbar{
+    animation: fade .2s ease-out;
+}

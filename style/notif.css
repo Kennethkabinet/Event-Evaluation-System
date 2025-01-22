@@ -1,0 +1,110 @@
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-table {   
+    margin: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #000;
+}
+
+.delete-all {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+table {
+    width: calc(100% - 40px); /* Adjust table to fit margins */
+    margin: 0 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Adds spacing between rows */
+    background-color: transparent;
+    table-layout: fixed; /* Ensure consistent column widths */
+}
+
+thead th {
+    text-align: left;
+    background-color: #f5f7fc;
+    color: #333;
+    padding: 10px;
+}
+
+thead th:nth-child(1),
+tbody td:nth-child(1) {
+    width: 40%; /* Set consistent width for Notification Type column */
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+    width: 60%; /* Set consistent width for Details column */
+}
+
+tbody tr {
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for the row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for rows */
+    overflow: hidden; /* Ensures rounded corners are applied visually */
+}
+
+tbody td {
+    padding: 15px 20px; /* Inner padding within cells */
+    background-color: #fff;
+    border-radius: 10px; /* Round the corners of the cells */
+}
+
+tbody tr:hover {
+    background-color: #f9f9ff;
+}
+
+td img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body #navbar{
+    animation: fade 1s ease-out;
+}
